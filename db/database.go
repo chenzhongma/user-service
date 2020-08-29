@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	"os"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 func CreateConnection() (*gorm.DB, error) {
